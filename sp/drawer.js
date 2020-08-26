@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // ドロワーの開閉ボタンの初期化
     document.querySelectorAll('.js-drawer-button').forEach(function(drawerButton) {
-      drawerButton.addEventListener('click', drawerButtonClickEvent);
+      drawerButton.addEventListener('click', {
+        drawer: drawer,
+        handleEvent: drawerButtonClickEvent
+      });
     });
   }
 
@@ -23,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
    * @return {void}
    */
   function drawerButtonClickEvent() {
-    toggleDrawer(drawer);
+    toggleDrawer(this.drawer);
   }
 
   /**
