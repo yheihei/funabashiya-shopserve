@@ -102,11 +102,14 @@
 .drawer-menu__links a {
   text-decoration: none;
 }
-.drawer-menu__link {
-  padding: 14px 10px 14px 20px;
-
+.drawer-menu__link-container {
   border: solid #252525;
   border-width: 0 0 1px 0;
+}
+.drawer-menu__link-link {
+  display: block;
+
+  padding: 14px 10px 14px 20px;
 }
 
 .c-search-form {
