@@ -231,13 +231,30 @@ function updateSliderTop(timeload) {
 </tr>
 </tbody>
 </table>
-<div class="drawer">
-  <div class="drawer-button js-drawer-button">
+<div class="drawer drawer-menu">
+  <div class="drawer-button js-drawer-button drawer-menu__close-button">
     <span class="drawer-button__close-icon">
   </div>
-  <ul>
-      <li><a href="#">サンプル</a></li>
-      <li><a href="#">サンプル</a></li>
+  <div class="drawer-menu__form">
+    <form name="frmSearch" class="c-search-form" method="GET" action="/smp/list.php">
+      <input class="c-search-form__text" type="text" name="search" value="">
+      <input type="hidden" name="type" value="search"/>
+      <input class="c-search-form__submit" type="submit" class="submit_gr" value="検索">
+    </form>
+  </div>
+  <div class="drawer-menu__title">
+    商品カテゴリ
+  </div>
+  <ul class="drawer-menu__links">
+    <li class="drawer-menu__link"><a href="#">元祖くず餅</a></li>
+    <li class="drawer-menu__link"><a href="#">あんみつ・豆寒・ところてん</a></li>
+    <li class="drawer-menu__link"><a href="#">季節限定フルーツあんみつ</a></li>
+    <li class="drawer-menu__link"><a href="#">天神お祝いぜんざい</a></li>
+    <li class="drawer-menu__link"><a href="#">最中日和(手詰め最中)</a></li>
+    <li class="drawer-menu__link"><a href="#">和フィナンシェ</a></li>
+    <li class="drawer-menu__link"><a href="#">くず餅プリン</a></li>
+    <li class="drawer-menu__link"><a href="#">ご贈答好適品</a></li>
+    <li class="drawer-menu__link"><a href="#">くず餅乳酸菌カプセル</a></li>
   </ul>
 </div>
 

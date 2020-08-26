@@ -1,3 +1,6 @@
+/**
+* ドロワーの動作に必要な基本CSS
+*/
 .drawer {
   position: fixed;
   height: 100vh;
@@ -23,7 +26,6 @@
 }
 
 .drawer-button {
-  display: inline-block;
   width: 30px;
   height: 22px;
   vertical-align: middle;
@@ -68,4 +70,60 @@
   height: 4px;
   margin-top: -2px;
   background: #000;
+}
+
+/**
+* ドロワーメニューデザイン
+*/
+.drawer-menu {
+  text-align: initial;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.drawer-menu__close-button {
+  margin-left: auto;
+}
+.drawer-menu__form {
+  margin: 20px 0;
+}
+
+.drawer-menu__title {
+  text-align: center;
+
+  padding-bottom: 10px;
+
+  border: solid #252525;
+  border-width: 0 0 1px 0;
+}
+
+.drawer-menu__links {
+
+}
+.drawer-menu__links a {
+  text-decoration: none;
+}
+.drawer-menu__link {
+  padding: 14px 10px 14px 20px;
+
+  border: solid #252525;
+  border-width: 0 0 1px 0;
+}
+
+.c-search-form {
+  display: flex;
+  justify-content: space-between;
+}
+.c-search-form__text {
+  width: 75%;
+  height: 40px;
+
+  font-size: 16px;
+}
+.c-search-form__submit {
+  width: 20%;
+
+  border: none;
+
+  background-color: #252525;
+  color: white;
 }
