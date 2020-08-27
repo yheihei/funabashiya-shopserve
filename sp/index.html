@@ -33,9 +33,6 @@ for (var i=0, len=html5_elements.length; i < len; i++){
 
 
 <link href="https://www.funabashiya.jp/hpgen/smp/css/default.css" rel="stylesheet">
-<!-- TODO drawerのファイルは本番化の際にFTPにアップすること -->
-<link href="./drawer.css" rel="stylesheet">
-<script src="./drawer.js" type="text/javascript"></script>
 
 <link rel="canonical" href="https://www.funabashiya.jp/" />
 
@@ -218,15 +215,16 @@ function updateSliderTop(timeload) {
     <center>
 <div class="logo clearof">
 <!-- logo+テキスト -->
+<link href="https://www.funabashiya.jp/hpgen/smp/css/drawer.css" rel="stylesheet">
+<script src="https://www.funabashiya.jp/hpgen/smp/css/drawer.js" type="text/javascript"></script>
 <table width='100%'>
 <tbody>
 <tr>
 <td><a style="text-decoration: none; padding-right: 5px;" href="https://www.funabashiya.jp/smp/index.html?"><img class="logoimg" alt="ロゴ画像" src="https://www.funabashiya.jp/pic-labo/smp_logo.png" border="0"> </a></td>
-<td align="left"><a style="text-decoration: none; font-size: 10px; color: #252525; line-height: 140%;" href="https://www.funabashiya.jp/smp/index.html?">元祖くず餅、あんみつ、亀戸天神、<br>和菓子の船橋屋オンラインショップ </a></td>
+<td align="left" style="letter-spacing: -1px;"><a style="text-decoration: none; font-size: 10px; color: #252525; line-height: 140%;" href="https://www.funabashiya.jp/smp/index.html?">元祖くず餅、あんみつ、亀戸天神、<br>和菓子の船橋屋オンラインショップ </a></td>
 <td>
   <div class="drawer-button js-drawer-button">
-    <!-- TODO FTPにアップすること -->
-    <img src="../img/drawer_menu_open.png">
+    <img src="http://funabashiya.jp/pic-labo/drawer_menu_open.png">
   </div>
 </td>
 </tr>
@@ -234,8 +232,7 @@ function updateSliderTop(timeload) {
 </table>
 <div class="drawer drawer-menu">
   <div class="drawer-button js-drawer-button drawer-menu__close-button">
-    <!-- TODO FTPにアップすること -->
-    <img src="../img/drawer_menu_close.png">
+    <img src="http://funabashiya.jp/pic-labo/drawer_menu_close.png">
   </div>
   <div class="drawer-menu__form">
     <form name="frmSearch" class="c-search-form" method="GET" action="/smp/list.php">
@@ -249,7 +246,7 @@ function updateSliderTop(timeload) {
   </div>
   <ul class="drawer-menu__links">
     <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/SHOP/53708/list.html">元祖くず餅</a></li>
-    <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/SHOP/153603/list.html">あんみつ・豆寒・ところてん</a></li>
+    <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/smp/list.php?type=class&mcat=53711">あんみつ・豆寒・ところてん</a></li>
     <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/smp/list.php?type=class&mcat=53761">季節限定フルーツあんみつ</a></li>
     <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/SHOP/54983/list.html">天神お祝いぜんざい</a></li>
     <li class="drawer-menu__link-container"><a class="drawer-menu__link-link" href="https://www.funabashiya.jp/SHOP/54984/list.html">最中日和(手詰め最中)</a></li>
